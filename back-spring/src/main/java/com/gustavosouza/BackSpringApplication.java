@@ -15,15 +15,16 @@ public class BackSpringApplication {
 		SpringApplication.run(BackSpringApplication.class, args);
 	}
 
-	// Inicializa BD
 	@Bean
 	CommandLineRunner initDatabase(CourseRepository courseRepository) {
 		return args -> {
 			courseRepository.deleteAll();
+
 			Course c = new Course();
 			c.setName("Angular com Spring");
-			c.setCategory("Front-end");
-			courseRepository.save(new Course());
+			c.setCategory("front-end");
+
+			courseRepository.save(c);
 		};
 	}
 }
