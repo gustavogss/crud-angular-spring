@@ -7,4 +7,5 @@
 - Angular Material
 - Typescript
 - Spring
-- Java
+- Java 17
+- Maven
