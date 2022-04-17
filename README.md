@@ -9,4 +9,4 @@
 - Spring
 - Java 17
 - Maven
-- H2B
+- H2 Database
