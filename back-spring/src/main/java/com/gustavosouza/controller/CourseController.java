@@ -24,5 +24,4 @@ public class CourseController {
   public @ResponseBody List<Course> list() {
     return courseRepository.findAll();
   }
-
 }
